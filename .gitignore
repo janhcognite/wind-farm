@@ -1,3 +1,4 @@
 
 *.pyc
 hou
+__pycache__/cogniteapi.cpython-311.pyc
