@@ -27,7 +27,7 @@ while not completed:
     index = 0
 
     for row_no, values in rows.items():
-        print("\nRow #\n", row_no)
+        print("\nRow #", row_no)
         index += 1
         for value in values:
             time_ms += 200
@@ -36,5 +36,5 @@ while not completed:
     
     completed = True
     #print(datapoints)
-    #print(len(datapoints))
+    print(len(datapoints))
     #client_tsp.time_series.data.insert(datapoints=datapoints)

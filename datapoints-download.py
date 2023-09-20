@@ -35,7 +35,6 @@ def copy_one_timeseries_data(external_id):
         datapointsArray = client.time_series.data.retrieve_arrays(external_id=external_id, start=start_date_ms, end=start_date_ms + ONE_WEEK_MS)
 
         dps_dict = get_empty_dps_dict(start_date_ms)
-        print(len(dps_dict.keys()))
 
         if len(datapointsArray) > 0:
             
@@ -75,7 +74,7 @@ def copy_one_timeseries_data(external_id):
             data.append((minute, column_values))
 
             # print(int((start_date_ms-START_DATE_MS)/60000), "Inserting data into sequence", external_id)
-            if minute % 1440 == 0:
+            if minute % 1440 == 0 and minute > 0:
                 print("Writing to sequence. Minute", minute)
                 client_tsp.sequences.data.insert(external_id=external_id, column_external_ids=COLUMNS_NAMES, rows=data,)
                 data = []
@@ -86,9 +85,6 @@ def copy_one_timeseries_data(external_id):
         # Check if all data have been read
         if start_date_ms > END_DATE_MS:
             complete = True
-
-# data = [(1, ['pi',3.14]), (2, ['e',2.72]) ]
-# >>> c.sequences.data.insert(column_external_ids=["col_a","col_b"], rows=data, id=1)
 
 
 copy_one_timeseries_data("V52-WindTurbine.MyTT")
