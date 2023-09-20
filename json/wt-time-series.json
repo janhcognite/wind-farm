@@ -1,0 +1,2720 @@
+[
+    {
+        "id": 82311501280758,
+        "external_id": "V52-WindTurbine.MyTT",
+        "name": "MyTT",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Top Bending Moment - y-dir",
+            "asset_external_id": "tower_top"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Top Bending Moment - y-dir",
+        "security_categories": []
+    },
+    {
+        "id": 108004665305669,
+        "external_id": "V52-WindTurbine.ActRefMax",
+        "name": "ActRefMax",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "active_power",
+            "concept_id": "http://purl.org/aspect/active_power",
+            "long_name": "Active Power",
+            "units": "kW",
+            "comments": "WTG Controller ActP MGr ref max",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "kW",
+        "is_step": false,
+        "description": "WTG Controller ActP MGr ref max",
+        "security_categories": []
+    },
+    {
+        "id": 222323665191563,
+        "external_id": "V52-WindTurbine.MyA4",
+        "name": "MyA4",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R6.7m (spare) ",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R6.7m (spare) ",
+        "security_categories": []
+    },
+    {
+        "id": 228551665745557,
+        "external_id": "V52-WindTurbine.yaw",
+        "name": "yaw",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "yaw_angle",
+            "concept_id": "http://purl.org/aspect/yaw_angle",
+            "long_name": "Yaw Angle",
+            "units": "deg",
+            "comments": "Yaw direction (from Modbus)",
+            "asset_external_id": "yaw"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Yaw direction (from Modbus)",
+        "security_categories": []
+    },
+    {
+        "id": 315546309846999,
+        "external_id": "V52-MetMast.Sdir_31m",
+        "name": "Sdir_31m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_direction",
+            "concept_id": "http://purl.org/aspect/wind_direction",
+            "long_name": "Wind Direction",
+            "units": "deg",
+            "comments": "Met Mast Sonic Anemometer Wind Direction at Mid Height",
+            "asset_external_id": "metmast_31_wdir"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Wind Direction at Mid Height",
+        "security_categories": []
+    },
+    {
+        "id": 388228414255150,
+        "external_id": "V52-WindTurbine.MyA2_Ocr",
+        "name": "MyA2_Ocr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R1.5m (spare) Offset - crosstalk corrected",
+            "asset_external_id": "blade_a_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R1.5m (spare) Offset - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 418265612885681,
+        "external_id": "V52-WindTurbine.MyB2",
+        "name": "MyB2",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade B R1.5m (spare) ",
+            "asset_external_id": "blade_b_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade B R1.5m (spare) ",
+        "security_categories": []
+    },
+    {
+        "id": 453278179971468,
+        "external_id": "V52-WindTurbine.MxA2_O",
+        "name": "MxA2_O",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R1.5m (spare) Offset",
+            "asset_external_id": "blade_a_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R1.5m (spare) Offset",
+        "security_categories": []
+    },
+    {
+        "id": 474333858249065,
+        "external_id": "V52-WindTurbine.ForceC",
+        "name": "ForceC",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "pitch_force",
+            "concept_id": "http://purl.org/aspect/pitch_force",
+            "long_name": "Pitch Force",
+            "units": "mV/V",
+            "comments": "SG on pitch arm, to be used as relative information among the 3 pitch arms (not calibrated)",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "mV/V",
+        "is_step": false,
+        "description": "SG on pitch arm, to be used as relative information among the 3 pitch arms (not calibrated)",
+        "security_categories": []
+    },
+    {
+        "id": 504951340214270,
+        "external_id": "V52-WindTurbine.ActPow",
+        "name": "ActPow",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "active_power",
+            "concept_id": "http://purl.org/aspect/active_power",
+            "long_name": "Active Power",
+            "units": "kW",
+            "comments": "WTG Controller ActPow Mgrid",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "kW",
+        "is_step": false,
+        "description": "WTG Controller ActPow Mgrid",
+        "security_categories": []
+    },
+    {
+        "id": 517757056398114,
+        "external_id": "V52-WindTurbine.MxA4",
+        "name": "MxA4",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R6.7m (spare) ",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R6.7m (spare) ",
+        "security_categories": []
+    },
+    {
+        "id": 532688977573522,
+        "external_id": "V52-WindTurbine.MxC3cr",
+        "name": "MxC3cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade C R6.6m - crosstalk corrected",
+            "asset_external_id": "blade_c_6.6"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade C R6.6m - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 718576432780901,
+        "external_id": "V52-WindTurbine.MyTM",
+        "name": "MyTM",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Mid. Bending Moment - y-dir",
+            "asset_external_id": "tower_mid"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Mid. Bending Moment - y-dir",
+        "security_categories": []
+    },
+    {
+        "id": 734271401755024,
+        "external_id": "V52-MetMast.Sdir_44m",
+        "name": "Sdir_44m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_direction",
+            "concept_id": "http://purl.org/aspect/wind_direction",
+            "long_name": "Wind Direction",
+            "units": "deg",
+            "comments": "Met Mast Sonic Anemometer Wind Direction at Hub Height",
+            "asset_external_id": "metmast_44_wdir"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Wind Direction at Hub Height",
+        "security_categories": []
+    },
+    {
+        "id": 754605208149556,
+        "external_id": "V52-WindTurbine.YawErr",
+        "name": "YawErr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "yaw_angle",
+            "concept_id": "http://purl.org/aspect/yaw_angle",
+            "long_name": "Yaw Angle",
+            "units": "deg",
+            "comments": "Yaw error (yaw-Wdir_41m)",
+            "asset_external_id": "yaw"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Yaw error (yaw-Wdir_41m)",
+        "security_categories": []
+    },
+    {
+        "id": 755997431867115,
+        "external_id": "V52-WindTurbine.MxC4cr",
+        "name": "MxC4cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade C R6.7m (spare) - crosstalk corrected",
+            "asset_external_id": "blade_c_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade C R6.7m (spare) - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 806844760881952,
+        "external_id": "V52-WindTurbine.Pitch1",
+        "name": "Pitch1",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "pitch_angle",
+            "concept_id": "http://purl.org/aspect/pitch_angle",
+            "long_name": "Pitch Angle",
+            "units": "deg",
+            "comments": "Pitch position, yoyo sensor",
+            "asset_external_id": "pitch"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Pitch position, yoyo sensor",
+        "security_categories": []
+    },
+    {
+        "id": 825967160573762,
+        "external_id": "V52-MetMast.SWsp_57m",
+        "name": "SWsp_57m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Met Mast Sonic Anemometer Wind Speed at Upper Mid Height",
+            "asset_external_id": "metmast_57_ws"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Wind Speed at Upper Mid Height",
+        "security_categories": []
+    },
+    {
+        "id": 931787648408461,
+        "external_id": "V52-WindTurbine.MyC4",
+        "name": "MyC4",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade C R6.7m (spare)",
+            "asset_external_id": "blade_c_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade C R6.7m (spare)",
+        "security_categories": []
+    },
+    {
+        "id": 1002256985174990,
+        "external_id": "V52-WindTurbine.ForceA",
+        "name": "ForceA",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "pitch_force",
+            "concept_id": "http://purl.org/aspect/pitch_force",
+            "long_name": "Pitch Force",
+            "units": "mV/V",
+            "comments": "SG on pitch arm, to be used as relative information among the 3 pitch arms (not calibrated)",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "mV/V",
+        "is_step": false,
+        "description": "SG on pitch arm, to be used as relative information among the 3 pitch arms (not calibrated)",
+        "security_categories": []
+    },
+    {
+        "id": 1108733072231507,
+        "external_id": "V52-MetMast.Stilt_31m",
+        "name": "Stilt_31m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flow_inclination_angle",
+            "concept_id": "http://purl.org/aspect/flow_inclination_angle",
+            "long_name": "Flow Inclination Angle",
+            "units": "deg",
+            "comments": "Met Mast Sonic Anemometer Tilt angle at Mid Height",
+            "asset_external_id": "metmast_31_ws"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Tilt angle at Mid Height",
+        "security_categories": []
+    },
+    {
+        "id": 1275570270743351,
+        "external_id": "V52-WindTurbine.gen",
+        "name": "gen",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "generator_speed",
+            "concept_id": "http://purl.org/aspect/generator_speed",
+            "long_name": "Generator Speed",
+            "units": "RPM",
+            "comments": "WTG Controller Generator speed ",
+            "asset_external_id": "generator_1"
+        },
+        "unit": "RPM",
+        "is_step": false,
+        "description": "WTG Controller Generator speed ",
+        "security_categories": []
+    },
+    {
+        "id": 1387136602663439,
+        "external_id": "V52-WindTurbine.MxA2",
+        "name": "MxA2",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R1.5m (spare) ",
+            "asset_external_id": "blade_a_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R1.5m (spare) ",
+        "security_categories": []
+    },
+    {
+        "id": 1446963104109369,
+        "external_id": "V52-WindTurbine.TT_45_225",
+        "name": "TT_45_225",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "mV/V",
+            "comments": "Tower Top Bending Moment 45\u00b0 - 225\u00b0",
+            "asset_external_id": "tower_top"
+        },
+        "unit": "mV/V",
+        "is_step": false,
+        "description": "Tower Top Bending Moment 45\u00b0 - 225\u00b0",
+        "security_categories": []
+    },
+    {
+        "id": 1489411554399887,
+        "external_id": "V52-MetMast.RHTemp_2m",
+        "name": "RHTemp_2m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "air_temperature",
+            "concept_id": "http://purl.org/aspect/air_temperature",
+            "long_name": "Air Temperature",
+            "units": "DegC",
+            "comments": "Metmast Temperature (from Hygrometer) at 2m",
+            "asset_external_id": "metmast_2"
+        },
+        "unit": "DegC",
+        "is_step": false,
+        "description": "Metmast Temperature (from Hygrometer) at 2m",
+        "security_categories": []
+    },
+    {
+        "id": 1521379387896481,
+        "external_id": "V52-WindTurbine.Qt",
+        "name": "Qt",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "reactive_power",
+            "concept_id": "http://purl.org/aspect/reactive_power",
+            "long_name": "Reactive Power",
+            "units": "VAr",
+            "comments": "Reactive Power Total (Qt)",
+            "asset_external_id": "inverter"
+        },
+        "unit": "VAr",
+        "is_step": false,
+        "description": "Reactive Power Total (Qt)",
+        "security_categories": []
+    },
+    {
+        "id": 1560330680791954,
+        "external_id": "V52-MetMast.RH_2m",
+        "name": "RH_2m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "relative_humidity",
+            "concept_id": "http://purl.org/aspect/relative_humidity",
+            "long_name": "Relative Humidity",
+            "units": "%",
+            "comments": "Metmast Relative humidity",
+            "asset_external_id": "metmast_2"
+        },
+        "unit": "%",
+        "is_step": false,
+        "description": "Metmast Relative humidity",
+        "security_categories": []
+    },
+    {
+        "id": 1594793861174269,
+        "external_id": "V52-WindTurbine.MxSdw",
+        "name": "MxSdw",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "main_shaft_tilt_moment",
+            "concept_id": "http://purl.org/aspect/main_shaft_tilt_moment",
+            "long_name": "Main Shaft Tilt Moment",
+            "units": "kNm",
+            "comments": "Main shaft calculated tilt moment",
+            "asset_external_id": "main_shaft"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Main shaft calculated tilt moment",
+        "security_categories": []
+    },
+    {
+        "id": 1715351332230095,
+        "external_id": "V52-WindTurbine.HSSTrq",
+        "name": "HSSTrq",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "main_shaft_torque",
+            "concept_id": "http://purl.org/aspect/main_shaft_torque",
+            "long_name": "Main Shaft Torque",
+            "units": "V",
+            "comments": "High Speed Shaft Torque (not calibrated)",
+            "asset_external_id": "hs_shaft"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "High Speed Shaft Torque (not calibrated)",
+        "security_categories": []
+    },
+    {
+        "id": 1716374549353288,
+        "external_id": "V52-WindTurbine.MxB3",
+        "name": "MxB3",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade B R6.6m ",
+            "asset_external_id": "blade_b_6.6"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade B R6.6m ",
+        "security_categories": []
+    },
+    {
+        "id": 1764566088373945,
+        "external_id": "V52-WindTurbine.MyA2cr",
+        "name": "MyA2cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R1.5m (spare) - crosstalk corrected",
+            "asset_external_id": "blade_a_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R1.5m (spare) - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 1802374391833157,
+        "external_id": "V52-MetMast.Wsp_70m",
+        "name": "Wsp_70m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Metmast Cup anemometer at Upper Tip Height, 70m",
+            "asset_external_id": "metmast_70"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Metmast Cup anemometer at Upper Tip Height, 70m",
+        "security_categories": []
+    },
+    {
+        "id": 1808995870811846,
+        "external_id": "V52-WindTurbine.MxA1_O",
+        "name": "MxA1_O",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R1.4m Offset",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R1.4m Offset",
+        "security_categories": []
+    },
+    {
+        "id": 1833297569290870,
+        "external_id": "V52-WindTurbine.MyA4cr",
+        "name": "MyA4cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R6.7m (spare) - crosstalk corrected",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R6.7m (spare) - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 1979178413633450,
+        "external_id": "V52-WindTurbine.MxA1cr",
+        "name": "MxA1cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R1.4m - crosstalk corrected",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R1.4m - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 2015584472802240,
+        "external_id": "V52-WindTurbine.MyC4cr",
+        "name": "MyC4cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade C R6.7m (spare) - crosstalk corrected",
+            "asset_external_id": "blade_c_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade C R6.7m (spare) - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 2092718092151333,
+        "external_id": "V52-WindTurbine.ROT",
+        "name": "ROT",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "rotor_speed",
+            "concept_id": "http://purl.org/aspect/rotor_speed",
+            "long_name": "Rotor Speed",
+            "units": "RPM",
+            "comments": "WTG Controller Rotor speed",
+            "asset_external_id": "rotor"
+        },
+        "unit": "RPM",
+        "is_step": false,
+        "description": "WTG Controller Rotor speed",
+        "security_categories": []
+    },
+    {
+        "id": 2285445468962088,
+        "external_id": "V52-WindTurbine.TT_135_315",
+        "name": "TT_135_315",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "mV/V",
+            "comments": "Tower Top Bending Moment 135\u00b0 - 315\u00b0",
+            "asset_external_id": "tower_top"
+        },
+        "unit": "mV/V",
+        "is_step": false,
+        "description": "Tower Top Bending Moment 135\u00b0 - 315\u00b0",
+        "security_categories": []
+    },
+    {
+        "id": 2290573710352552,
+        "external_id": "V52-WindTurbine.MxA5",
+        "name": "MxA5",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R13.1m ",
+            "asset_external_id": "blade_a_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R13.1m ",
+        "security_categories": []
+    },
+    {
+        "id": 2301064287616397,
+        "external_id": "V52-WindTurbine.MxA6",
+        "name": "MxA6",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R19.6m ",
+            "asset_external_id": "blade_a_19.6"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R19.6m ",
+        "security_categories": []
+    },
+    {
+        "id": 2320794957337995,
+        "external_id": "V52-WindTurbine.gen_ref",
+        "name": "gen_ref",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "generator_speed",
+            "concept_id": "http://purl.org/aspect/generator_speed",
+            "long_name": "Generator Speed",
+            "units": "RPM",
+            "comments": "WTG Controller Generator speed reference",
+            "asset_external_id": "generator_1"
+        },
+        "unit": "RPM",
+        "is_step": false,
+        "description": "WTG Controller Generator speed reference",
+        "security_categories": []
+    },
+    {
+        "id": 2364842178088599,
+        "external_id": "V52-WindTurbine.MyB1",
+        "name": "MyB1",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade B R1.4m ",
+            "asset_external_id": "blade_b_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade B R1.4m ",
+        "security_categories": []
+    },
+    {
+        "id": 2380586633913063,
+        "external_id": "V52-WindTurbine.MTTlat",
+        "name": "MTTlat",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Top Bending (lateral)",
+            "asset_external_id": "tower_top"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Top Bending (lateral)",
+        "security_categories": []
+    },
+    {
+        "id": 2381161857910505,
+        "external_id": "V52-WindTurbine.HSS_Y",
+        "name": "HSS_Y",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "main_shaft_bending_moment",
+            "concept_id": "http://purl.org/aspect/main_shaft_bending_moment",
+            "long_name": "Main Shaft Bending Moment",
+            "units": "V",
+            "comments": "High Speed Shaft Bending Moment (not calibrated)",
+            "asset_external_id": "hs_shaft"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "High Speed Shaft Bending Moment (not calibrated)",
+        "security_categories": []
+    },
+    {
+        "id": 2393940854383425,
+        "external_id": "V52-WindTurbine.MxTM",
+        "name": "MxTM",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Mid. Bending Moment - x-dir",
+            "asset_external_id": "tower_mid"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Mid. Bending Moment - x-dir",
+        "security_categories": []
+    },
+    {
+        "id": 2448323160781976,
+        "external_id": "V52-WindTurbine.MyC1",
+        "name": "MyC1",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade C R1.4m ",
+            "asset_external_id": "blade_c_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade C R1.4m ",
+        "security_categories": []
+    },
+    {
+        "id": 2460788365572556,
+        "external_id": "V52-WindTurbine.MxB3cr",
+        "name": "MxB3cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade B R6.6m - crosstalk corrected",
+            "asset_external_id": "blade_b_6.6"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade B R6.6m - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 2473048258112883,
+        "external_id": "V52-WindTurbine.MxC1cr",
+        "name": "MxC1cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade C R1.4m - crosstalk corrected",
+            "asset_external_id": "blade_c_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade C R1.4m - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 2526733619815960,
+        "external_id": "V52-MetMast.SWsp_44m",
+        "name": "SWsp_44m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Met Mast Sonic Anemometer Wind Speed at Hub Height",
+            "asset_external_id": "metmast_44_ws"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Wind Speed at Hub Height",
+        "security_categories": []
+    },
+    {
+        "id": 2614628384184837,
+        "external_id": "V52-WindTurbine.MyA4_O",
+        "name": "MyA4_O",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R6.6m Offset",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R6.6m Offset",
+        "security_categories": []
+    },
+    {
+        "id": 2687720185320339,
+        "external_id": "V52-WindTurbine.MTMdw",
+        "name": "MTMdw",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Mid. Bending  (down wind)",
+            "asset_external_id": "tower_mid"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Mid. Bending  (down wind)",
+        "security_categories": []
+    },
+    {
+        "id": 2712704178043192,
+        "external_id": "V52-WindTurbine.MxTT",
+        "name": "MxTT",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Top Bending Moment - x-dir",
+            "asset_external_id": "tower_top"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Top Bending Moment - x-dir",
+        "security_categories": []
+    },
+    {
+        "id": 2787698172770485,
+        "external_id": "V52-WindTurbine.MxB4",
+        "name": "MxB4",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "mV/V",
+            "comments": "Flapwise Bend. Mom. Blade B R6.7m (spare) ",
+            "asset_external_id": "blade_b_1.4"
+        },
+        "unit": "mV/V",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade B R6.7m (spare) ",
+        "security_categories": []
+    },
+    {
+        "id": 2852132042176606,
+        "external_id": "V52-WindTurbine.MyTM_DAU",
+        "name": "MyTM_DAU",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "mV/mV",
+            "comments": "Tower Mid Bending Moment Recorded in DAU (troubleshooting)",
+            "asset_external_id": "tower_mid"
+        },
+        "unit": "mV/mV",
+        "is_step": false,
+        "description": "Tower Mid Bending Moment Recorded in DAU (troubleshooting)",
+        "security_categories": []
+    },
+    {
+        "id": 3078223825584897,
+        "external_id": "V52-WindTurbine.Acc3T",
+        "name": "Acc3T",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "nacelle_acceleration ",
+            "concept_id": "http://purl.org/aspect/nacelle_acceleration ",
+            "long_name": "Nacelle Acceleration ",
+            "units": "V",
+            "comments": "Accelration from nacelle floor, in middle of tower axis, in Z-Direction",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "Accelration from nacelle floor, in middle of tower axis, in Z-Direction",
+        "security_categories": []
+    },
+    {
+        "id": 3112867480233203,
+        "external_id": "V52-WindTurbine.Gear_D_Y",
+        "name": "Gear_D_Y",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "gearbox_displacement",
+            "concept_id": "http://purl.org/aspect/gearbox_displacement",
+            "long_name": "Gearbox Displacement",
+            "units": "V",
+            "comments": "Gearbox Displacement Y (laser sensor) (not calibrated)",
+            "asset_external_id": "gearbox_1"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "Gearbox Displacement Y (laser sensor) (not calibrated)",
+        "security_categories": []
+    },
+    {
+        "id": 3134311959907948,
+        "external_id": "V52-MetMast.SWsp_18m",
+        "name": "SWsp_18m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Met Mast Sonic Anemometer Wind Speed at Lower Tip Height",
+            "asset_external_id": "metmast_18_ws"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Wind Speed at Lower Tip Height",
+        "security_categories": []
+    },
+    {
+        "id": 3169292787051095,
+        "external_id": "V52-WindTurbine.MxA4cr",
+        "name": "MxA4cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R6.7m (spare) - crosstalk corrected",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R6.7m (spare) - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 3176823734477252,
+        "external_id": "V52-WindTurbine.Acc1T",
+        "name": "Acc1T",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "nacelle_acceleration ",
+            "concept_id": "http://purl.org/aspect/nacelle_acceleration ",
+            "long_name": "Nacelle Acceleration ",
+            "units": "V",
+            "comments": "Accelration from nacelle floor, in middle of tower axis, in X-Direction",
+            "asset_external_id": "nacelle_1"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "Accelration from nacelle floor, in middle of tower axis, in X-Direction",
+        "security_categories": []
+    },
+    {
+        "id": 3342457175978320,
+        "external_id": "V52-MetMast.Stilt_57m",
+        "name": "Stilt_57m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flow_inclination_angle",
+            "concept_id": "http://purl.org/aspect/flow_inclination_angle",
+            "long_name": "Flow Inclination Angle",
+            "units": "deg",
+            "comments": "Met Mast Sonic Anemometer Tilt angle at Upper Mid Height",
+            "asset_external_id": "metmast_57_ws"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Tilt angle at Upper Mid Height",
+        "security_categories": []
+    },
+    {
+        "id": 3429362208586147,
+        "external_id": "V52-WindTurbine.MxC3",
+        "name": "MxC3",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade C R6.6m ",
+            "asset_external_id": "blade_c_6.6"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade C R6.6m ",
+        "security_categories": []
+    },
+    {
+        "id": 3433019739882810,
+        "external_id": "V52-WindTurbine.MyA1cr",
+        "name": "MyA1cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R1.4m - crosstalk corrected",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R1.4m - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 3515735403758020,
+        "external_id": "V52-MetMast.Sdir_70m",
+        "name": "Sdir_70m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_direction",
+            "concept_id": "http://purl.org/aspect/wind_direction",
+            "long_name": "Wind Direction",
+            "units": "deg",
+            "comments": "Met Mast Sonic Anemometer Wind Direction at Upper Tip Height",
+            "asset_external_id": "metmast_70_wdir"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Wind Direction at Upper Tip Height",
+        "security_categories": []
+    },
+    {
+        "id": 3545607881842936,
+        "external_id": "V52-WindTurbine.WS",
+        "name": "WS",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Nacelle wind speed, ultrasonic anemometer FT702LT (in turbine's spec docs) CT341 (in installation CD)",
+            "asset_external_id": "nacelle_1"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Nacelle wind speed, ultrasonic anemometer FT702LT (in turbine's spec docs) CT341 (in installation CD)",
+        "security_categories": []
+    },
+    {
+        "id": 3608491589034949,
+        "external_id": "V52-MetMast.Stilt_18m",
+        "name": "Stilt_18m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flow_inclination_angle",
+            "concept_id": "http://purl.org/aspect/flow_inclination_angle",
+            "long_name": "Flow Inclination Angle",
+            "units": "deg",
+            "comments": "Met Mast Sonic Anemometer Tilt angle at Lower Tip Height",
+            "asset_external_id": "metmast_18_ws"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Tilt angle at Lower Tip Height",
+        "security_categories": []
+    },
+    {
+        "id": 3683835569240495,
+        "external_id": "V52-WindTurbine.pos0",
+        "name": "pos0",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "rotor_position",
+            "concept_id": "http://purl.org/aspect/rotor_position",
+            "long_name": "Rotor Position",
+            "units": "deg",
+            "comments": "This is the azimuth position of the rotor (when blade A points upwards then azimuth = 0deg)",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "This is the azimuth position of the rotor (when blade A points upwards then azimuth = 0deg)",
+        "security_categories": []
+    },
+    {
+        "id": 3748796850727425,
+        "external_id": "V52-WindTurbine.freq",
+        "name": "freq",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "grid_frequency",
+            "concept_id": "http://purl.org/aspect/grid_frequency",
+            "long_name": "Grid Frequency",
+            "units": "Hz",
+            "comments": "WTG Controller Grid Frequency from WTG controller",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "Hz",
+        "is_step": false,
+        "description": "WTG Controller Grid Frequency from WTG controller",
+        "security_categories": []
+    },
+    {
+        "id": 3932314673966846,
+        "external_id": "V52-WindTurbine.MxA2_Ocr",
+        "name": "MxA2_Ocr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R1.5m (spare) Offset - crosstalk corrected",
+            "asset_external_id": "blade_a_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R1.5m (spare) Offset - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 4014482003594268,
+        "external_id": "V52-WindTurbine.Pt",
+        "name": "Pt",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "active_power",
+            "concept_id": "http://purl.org/aspect/active_power",
+            "long_name": "Active Power",
+            "units": "kW",
+            "comments": "Active Power Total (Pt)",
+            "asset_external_id": "inverter"
+        },
+        "unit": "kW",
+        "is_step": false,
+        "description": "Active Power Total (Pt)",
+        "security_categories": []
+    },
+    {
+        "id": 4035137622455497,
+        "external_id": "V52-WindTurbine.MyA2_O",
+        "name": "MyA2_O",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R1.5m (spare) Offset",
+            "asset_external_id": "blade_a_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R1.5m (spare) Offset",
+        "security_categories": []
+    },
+    {
+        "id": 4213963843322002,
+        "external_id": "V52-WindTurbine.MyA2",
+        "name": "MyA2",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R1.5m (spare)",
+            "asset_external_id": "blade_a_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R1.5m (spare)",
+        "security_categories": []
+    },
+    {
+        "id": 4244619033423026,
+        "external_id": "V52-WindTurbine.MyC3cr",
+        "name": "MyC3cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade C R6.6m - crosstalk corrected",
+            "asset_external_id": "blade_c_6.6"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade C R6.6m - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 4322703357252815,
+        "external_id": "V52-WindTurbine.MxA2cr",
+        "name": "MxA2cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R1.5m (spare) - crosstalk corrected",
+            "asset_external_id": "blade_a_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R1.5m (spare) - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 4397900029397120,
+        "external_id": "V52-WindTurbine.Frequency",
+        "name": "Frequency",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "grid_frequency",
+            "concept_id": "http://purl.org/aspect/grid_frequency",
+            "long_name": "Grid Frequency",
+            "units": "Hz",
+            "comments": "Grid frequency from DEIF",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "Hz",
+        "is_step": false,
+        "description": "Grid frequency from DEIF",
+        "security_categories": []
+    },
+    {
+        "id": 4399583881455233,
+        "external_id": "V52-WindTurbine.MyA4_Ocr",
+        "name": "MyA4_Ocr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R6.6m Offset - crosstalk corrected",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R6.6m Offset - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 4444854552483445,
+        "external_id": "V52-MetMast.SWsp_31m",
+        "name": "SWsp_31m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Met Mast Sonic Anemometer Wind Speed at Mid Height",
+            "asset_external_id": "metmast_31_ws"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Wind Speed at Mid Height",
+        "security_categories": []
+    },
+    {
+        "id": 4457500767684509,
+        "external_id": "V52-WindTurbine.Gear_D_X",
+        "name": "Gear_D_X",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "gearbox_displacement",
+            "concept_id": "http://purl.org/aspect/gearbox_displacement",
+            "long_name": "Gearbox Displacement",
+            "units": "V",
+            "comments": "Gearbox Displacement X (laser sensor) (not calibrated)",
+            "asset_external_id": "gearbox_1"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "Gearbox Displacement X (laser sensor) (not calibrated)",
+        "security_categories": []
+    },
+    {
+        "id": 4468589154122796,
+        "external_id": "V52-MetMast.Sdir_57m",
+        "name": "Sdir_57m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_direction",
+            "concept_id": "http://purl.org/aspect/wind_direction",
+            "long_name": "Wind Direction",
+            "units": "deg",
+            "comments": "Met Mast Sonic Anemometer Wind Direction at Upper Mid Height",
+            "asset_external_id": "metmast_57_wdir"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Wind Direction at Upper Mid Height",
+        "security_categories": []
+    },
+    {
+        "id": 4501236859910921,
+        "external_id": "V52-MetMast.Wsp_31m",
+        "name": "Wsp_31m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Metmast Cup anemometer at Mid Height, 31m",
+            "asset_external_id": "metmast_31"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Metmast Cup anemometer at Mid Height, 31m",
+        "security_categories": []
+    },
+    {
+        "id": 4502954778575041,
+        "external_id": "V52-WindTurbine.St",
+        "name": "St",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "apparent_power",
+            "concept_id": "http://purl.org/aspect/apparent_power",
+            "long_name": "Apparent Power",
+            "units": "VA",
+            "comments": "Apparent Power Total (St)",
+            "asset_external_id": "inverter"
+        },
+        "unit": "VA",
+        "is_step": false,
+        "description": "Apparent Power Total (St)",
+        "security_categories": []
+    },
+    {
+        "id": 4527826934293905,
+        "external_id": "V52-WindTurbine.Acc2T",
+        "name": "Acc2T",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "nacelle_acceleration ",
+            "concept_id": "http://purl.org/aspect/nacelle_acceleration ",
+            "long_name": "Nacelle Acceleration ",
+            "units": "V",
+            "comments": "Accelration from nacelle floor, in middle of tower axis, in Y-Direction",
+            "asset_external_id": "nacelle_1"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "Accelration from nacelle floor, in middle of tower axis, in Y-Direction",
+        "security_categories": []
+    },
+    {
+        "id": 4648777095002210,
+        "external_id": "V52-WindTurbine.RePow",
+        "name": "RePow",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "reactive_power",
+            "concept_id": "http://purl.org/aspect/reactive_power",
+            "long_name": "Reactive Power",
+            "units": "kVAr",
+            "comments": "WTG Controller ReactPowMGrid",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "kVAr",
+        "is_step": false,
+        "description": "WTG Controller ReactPowMGrid",
+        "security_categories": []
+    },
+    {
+        "id": 4668993378400401,
+        "external_id": "V52-WindTurbine.Gear_D_Z",
+        "name": "Gear_D_Z",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "gearbox_displacement",
+            "concept_id": "http://purl.org/aspect/gearbox_displacement",
+            "long_name": "Gearbox Displacement",
+            "units": "V",
+            "comments": "Gearbox Displacement Z (laser sensor) (not calibrated)",
+            "asset_external_id": "gearbox_1"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "Gearbox Displacement Z (laser sensor) (not calibrated)",
+        "security_categories": []
+    },
+    {
+        "id": 4709162786647138,
+        "external_id": "V52-MetMast.Press_enc_2m",
+        "name": "Press_enc_2m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "air_pressure",
+            "concept_id": "http://purl.org/aspect/air_pressure",
+            "long_name": "Air Pressure",
+            "units": "hPa",
+            "comments": "Metmast Air pressure ground level, 2m",
+            "asset_external_id": "metmast_2"
+        },
+        "unit": "hPa",
+        "is_step": false,
+        "description": "Metmast Air pressure ground level, 2m",
+        "security_categories": []
+    },
+    {
+        "id": 4783139519163909,
+        "external_id": "V52-MetMast.AirAbs_70m",
+        "name": "AirAbs_70m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "air_temperature",
+            "concept_id": "http://purl.org/aspect/air_temperature",
+            "long_name": "Air Temperature",
+            "units": "DegC",
+            "comments": "Metmast Temperature sensor at Upper Tip Height, 70m",
+            "asset_external_id": "metmast_70"
+        },
+        "unit": "DegC",
+        "is_step": false,
+        "description": "Metmast Temperature sensor at Upper Tip Height, 70m",
+        "security_categories": []
+    },
+    {
+        "id": 4786302308787620,
+        "external_id": "V52-MetMast.Rain",
+        "name": "Rain",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "rain_status",
+            "concept_id": "http://purl.org/aspect/rain_status",
+            "long_name": "Rain Status",
+            "units": "",
+            "comments": "Metmast Rain sensor 1 = rain present, 0 = no rain",
+            "asset_external_id": "metmast_rain"
+        },
+        "unit": "",
+        "is_step": false,
+        "description": "Metmast Rain sensor 1 = rain present, 0 = no rain",
+        "security_categories": []
+    },
+    {
+        "id": 4787870687450334,
+        "external_id": "V52-WindTurbine.MyB3",
+        "name": "MyB3",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade B R6.6m ",
+            "asset_external_id": "blade_b_6.6"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade B R6.6m ",
+        "security_categories": []
+    },
+    {
+        "id": 4813079709672988,
+        "external_id": "V52-WindTurbine.HSS_X",
+        "name": "HSS_X",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "main_shaft_bending_moment",
+            "concept_id": "http://purl.org/aspect/main_shaft_bending_moment",
+            "long_name": "Main Shaft Bending Moment",
+            "units": "V",
+            "comments": "High Speed Shaft Bending Moment (not calibrated)",
+            "asset_external_id": "hs_shaft"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "High Speed Shaft Bending Moment (not calibrated)",
+        "security_categories": []
+    },
+    {
+        "id": 4875021896377595,
+        "external_id": "V52-WindTurbine.MyC3",
+        "name": "MyC3",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade C R6.6m ",
+            "asset_external_id": "blade_c_6.6"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade C R6.6m ",
+        "security_categories": []
+    },
+    {
+        "id": 5008653656888130,
+        "external_id": "V52-WindTurbine.MyC2",
+        "name": "MyC2",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade C R1.5m (spare)",
+            "asset_external_id": "blade_c_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade C R1.5m (spare)",
+        "security_categories": []
+    },
+    {
+        "id": 5078998326932231,
+        "external_id": "V52-WindTurbine.Acc3N",
+        "name": "Acc3N",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "nacelle_acceleration ",
+            "concept_id": "http://purl.org/aspect/nacelle_acceleration ",
+            "long_name": "Nacelle Acceleration ",
+            "units": "V",
+            "comments": "Accelration from the back side of the nacelle, in Z-Direction",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "Accelration from the back side of the nacelle, in Z-Direction",
+        "security_categories": []
+    },
+    {
+        "id": 5137505728003683,
+        "external_id": "V52-WindTurbine.MxC4",
+        "name": "MxC4",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade C R6.7m (spare)",
+            "asset_external_id": "blade_c_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade C R6.7m (spare)",
+        "security_categories": []
+    },
+    {
+        "id": 5145318155430459,
+        "external_id": "V52-WindTurbine.MyR",
+        "name": "MyR",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "main_shaft_bending_moment",
+            "concept_id": "http://purl.org/aspect/main_shaft_bending_moment",
+            "long_name": "Main Shaft Bending Moment",
+            "units": "kNm",
+            "comments": "Main shaft bending y-dir",
+            "asset_external_id": "main_shaft"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Main shaft bending y-dir",
+        "security_categories": []
+    },
+    {
+        "id": 5300696902667123,
+        "external_id": "V52-WindTurbine.Acc2N",
+        "name": "Acc2N",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "nacelle_acceleration ",
+            "concept_id": "http://purl.org/aspect/nacelle_acceleration ",
+            "long_name": "Nacelle Acceleration ",
+            "units": "V",
+            "comments": "Accelration from the back side of the nacelle, in Y-Direction",
+            "asset_external_id": "nacelle_1"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "Accelration from the back side of the nacelle, in Y-Direction",
+        "security_categories": []
+    },
+    {
+        "id": 5327472284256702,
+        "external_id": "V52-WindTurbine.MxTB",
+        "name": "MxTB",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Bot. Bending Moment - x-dir",
+            "asset_external_id": "tower"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Bot. Bending Moment - x-dir",
+        "security_categories": []
+    },
+    {
+        "id": 5370719278086280,
+        "external_id": "V52-WindTurbine.MxA4_Ocr",
+        "name": "MxA4_Ocr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R6.6m Offset - crosstalk corrected",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R6.6m Offset - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 5560577583487977,
+        "external_id": "V52-WindTurbine.MyC1cr",
+        "name": "MyC1cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade C R1.4m - crosstalk corrected",
+            "asset_external_id": "blade_c_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade C R1.4m - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 5753408562939018,
+        "external_id": "V52-WindTurbine.MzTM",
+        "name": "MzTM",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_torsion",
+            "concept_id": "http://purl.org/aspect/tower_torsion",
+            "long_name": "Tower Torsion",
+            "units": "kNm",
+            "comments": "Tower Mid. Torsion",
+            "asset_external_id": "tower_mid"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Mid. Torsion",
+        "security_categories": []
+    },
+    {
+        "id": 5765106081891869,
+        "external_id": "V52-WindTurbine.MxA1",
+        "name": "MxA1",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R1.4m  ",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R1.4m  ",
+        "security_categories": []
+    },
+    {
+        "id": 5786122727533154,
+        "external_id": "V52-MetMast.Wdir_41m",
+        "name": "Wdir_41m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_direction",
+            "concept_id": "http://purl.org/aspect/wind_direction",
+            "long_name": "Wind Direction",
+            "units": "Deg",
+            "comments": "Metmast Wind direction from potentiometric vane, 41m",
+            "asset_external_id": "metmast_41"
+        },
+        "unit": "Deg",
+        "is_step": false,
+        "description": "Metmast Wind direction from potentiometric vane, 41m",
+        "security_categories": []
+    },
+    {
+        "id": 5788288887621591,
+        "external_id": "V52-WindTurbine.ForceB",
+        "name": "ForceB",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "pitch_force",
+            "concept_id": "http://purl.org/aspect/pitch_force",
+            "long_name": "Pitch Force",
+            "units": "mV/V",
+            "comments": "SG on pitch arm, to be used as relative information among the 3 pitch arms (not calibrated)",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "mV/V",
+        "is_step": false,
+        "description": "SG on pitch arm, to be used as relative information among the 3 pitch arms (not calibrated)",
+        "security_categories": []
+    },
+    {
+        "id": 5960363324546751,
+        "external_id": "V52-WindTurbine.MxA4_O",
+        "name": "MxA4_O",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R6.6m Offset",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R6.6m Offset",
+        "security_categories": []
+    },
+    {
+        "id": 5985764359725979,
+        "external_id": "V52-WindTurbine.MzTT",
+        "name": "MzTT",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_torsion",
+            "concept_id": "http://purl.org/aspect/tower_torsion",
+            "long_name": "Tower Torsion",
+            "units": "kNm",
+            "comments": "Tower Top Torsion",
+            "asset_external_id": "tower_top"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Top Torsion",
+        "security_categories": []
+    },
+    {
+        "id": 6013654336718334,
+        "external_id": "V52-WindTurbine.MyA3_O",
+        "name": "MyA3_O",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R6.6m Offset",
+            "asset_external_id": "blade_a_6.6"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R6.6m Offset",
+        "security_categories": []
+    },
+    {
+        "id": 6072708478159891,
+        "external_id": "V52-MetMast.Wsp_18m",
+        "name": "Wsp_18m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Metmast Cup anemometer at Lower Tip Height, 18m",
+            "asset_external_id": "metmast_18"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Metmast Cup anemometer at Lower Tip Height, 18m",
+        "security_categories": []
+    },
+    {
+        "id": 6102873959840582,
+        "external_id": "V52-WindTurbine.MxR",
+        "name": "MxR",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "main_shaft_bending_moment",
+            "concept_id": "http://purl.org/aspect/main_shaft_bending_moment",
+            "long_name": "Main Shaft Bending Moment",
+            "units": "kNm",
+            "comments": "Main shaft bending x-dir",
+            "asset_external_id": "main_shaft"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Main shaft bending x-dir",
+        "security_categories": []
+    },
+    {
+        "id": 6113399280097711,
+        "external_id": "V52-MetMast.Svec_18m",
+        "name": "Svec_18m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Met Mast Sonic Anemometer Vectorial Wind Speed at Lower Tip Height",
+            "asset_external_id": "metmast_18_ws"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Vectorial Wind Speed at Lower Tip Height",
+        "security_categories": []
+    },
+    {
+        "id": 6143682192501905,
+        "external_id": "V52-WindTurbine.MTBlat",
+        "name": "MTBlat",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Bot. Bending (lateral)",
+            "asset_external_id": "tower"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Bot. Bending (lateral)",
+        "security_categories": []
+    },
+    {
+        "id": 6155560800310925,
+        "external_id": "V52-WindTurbine.pitch_ref",
+        "name": "pitch_ref",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "pitch_angle",
+            "concept_id": "http://purl.org/aspect/pitch_angle",
+            "long_name": "Pitch Angle",
+            "units": "deg",
+            "comments": "WTG Controller Pitch positon reference",
+            "asset_external_id": "pitch"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "WTG Controller Pitch positon reference",
+        "security_categories": []
+    },
+    {
+        "id": 6342236807877775,
+        "external_id": "V52-WindTurbine.MyTB",
+        "name": "MyTB",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Bot. Bending Moment - y-dir",
+            "asset_external_id": "tower"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Bot. Bending Moment - y-dir",
+        "security_categories": []
+    },
+    {
+        "id": 6436875323577267,
+        "external_id": "V52-WindTurbine.MTBdw",
+        "name": "MTBdw",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Bot. Bending (down wind)",
+            "asset_external_id": "tower"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Bot. Bending (down wind)",
+        "security_categories": []
+    },
+    {
+        "id": 6538097815114802,
+        "external_id": "V52-WindTurbine.MyB1cr",
+        "name": "MyB1cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade B R1.4m - crosstalk corrected",
+            "asset_external_id": "blade_b_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade B R1.4m - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 6541577431107310,
+        "external_id": "V52-WindTurbine.MyB2cr",
+        "name": "MyB2cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade B R1.5m (spare) - crosstalk corrected",
+            "asset_external_id": "blade_b_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade B R1.5m (spare) - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 6593853040146537,
+        "external_id": "V52-WindTurbine.MyA3",
+        "name": "MyA3",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R6.6m ",
+            "asset_external_id": "blade_a_6.6"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R6.6m ",
+        "security_categories": []
+    },
+    {
+        "id": 6724705694171189,
+        "external_id": "V52-MetMast.SWsp_70m",
+        "name": "SWsp_70m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Met Mast Sonic Anemometer Wind Speed at Upper Tip Height",
+            "asset_external_id": "metmast_70_ws"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Wind Speed at Upper Tip Height",
+        "security_categories": []
+    },
+    {
+        "id": 6749283567589949,
+        "external_id": "V52-WindTurbine.MxB2",
+        "name": "MxB2",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade B R1.5m (spare) ",
+            "asset_external_id": "blade_b_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade B R1.5m (spare) ",
+        "security_categories": []
+    },
+    {
+        "id": 6751638941209103,
+        "external_id": "V52-WindTurbine.MyA1_O",
+        "name": "MyA1_O",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R1.4m Offset",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R1.4m Offset",
+        "security_categories": []
+    },
+    {
+        "id": 6758086704447295,
+        "external_id": "V52-WindTurbine.Acc1N",
+        "name": "Acc1N",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "nacelle_acceleration ",
+            "concept_id": "http://purl.org/aspect/nacelle_acceleration ",
+            "long_name": "Nacelle Acceleration ",
+            "units": "V",
+            "comments": "Accelration from the back side of the nacelle, in X-Direction",
+            "asset_external_id": "nacelle_1"
+        },
+        "unit": "V",
+        "is_step": false,
+        "description": "Accelration from the back side of the nacelle, in X-Direction",
+        "security_categories": []
+    },
+    {
+        "id": 6881701057380817,
+        "external_id": "V52-WindTurbine.MzR",
+        "name": "MzR",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "main_shaft_torque",
+            "concept_id": "http://purl.org/aspect/main_shaft_torque",
+            "long_name": "Main Shaft Torque",
+            "units": "kNm",
+            "comments": "Main shaft torque",
+            "asset_external_id": "main_shaft"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Main shaft torque",
+        "security_categories": []
+    },
+    {
+        "id": 6934097487946643,
+        "external_id": "V52-WindTurbine.MTMlat",
+        "name": "MTMlat",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Mid. Bending (lateral)",
+            "asset_external_id": "tower_mid"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Mid. Bending (lateral)",
+        "security_categories": []
+    },
+    {
+        "id": 6940852367721852,
+        "external_id": "V52-WindTurbine.MxA3",
+        "name": "MxA3",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "mV/V",
+            "comments": "Flapwise Bend. Mom. Blade A R6.6m ",
+            "asset_external_id": "blade_a_6.6"
+        },
+        "unit": "mV/V",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R6.6m ",
+        "security_categories": []
+    },
+    {
+        "id": 6969600373799545,
+        "external_id": "V52-WindTurbine.Loadcell",
+        "name": "Loadcell",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "",
+            "concept_id": "",
+            "long_name": "",
+            "units": "",
+            "comments": "",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "",
+        "is_step": false,
+        "description": "",
+        "security_categories": []
+    },
+    {
+        "id": 6985153919590120,
+        "external_id": "V52-WindTurbine.MxC1",
+        "name": "MxC1",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade C R1.4m  ",
+            "asset_external_id": "blade_c_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade C R1.4m  ",
+        "security_categories": []
+    },
+    {
+        "id": 7033195049958058,
+        "external_id": "V52-WindTurbine.MxC2cr",
+        "name": "MxC2cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade C R1.5m (spare) - crosstalk corrected",
+            "asset_external_id": "blade_c_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade C R1.5m (spare) - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 7049035264567106,
+        "external_id": "V52-WindTurbine.MxB2cr",
+        "name": "MxB2cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade B R1.5m (spare) - crosstalk corrected",
+            "asset_external_id": "blade_b_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade B R1.5m (spare) - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 7123656123819394,
+        "external_id": "V52-WindTurbine.MxA1_Ocr",
+        "name": "MxA1_Ocr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade A R1.4m Offset - crosstalk corrected",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R1.4m Offset - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 7152059942441886,
+        "external_id": "V52-WindTurbine.pitch",
+        "name": "pitch",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "pitch_angle",
+            "concept_id": "http://purl.org/aspect/pitch_angle",
+            "long_name": "Pitch Angle",
+            "units": "deg",
+            "comments": "WTG Controller Pitch position",
+            "asset_external_id": "pitch"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "WTG Controller Pitch position",
+        "security_categories": []
+    },
+    {
+        "id": 7210027559631217,
+        "external_id": "V52-WindTurbine.MyA1_Ocr",
+        "name": "MyA1_Ocr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R1.4m Offset - crosstalk corrected",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R1.4m Offset - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 7288745950816284,
+        "external_id": "V52-MetMast.Sdir_18m",
+        "name": "Sdir_18m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_direction",
+            "concept_id": "http://purl.org/aspect/wind_direction",
+            "long_name": "Wind Direction",
+            "units": "deg",
+            "comments": "Met Mast Sonic Anemometer Wind Direction at Lower Tip Height",
+            "asset_external_id": "metmast_18_wdir"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Wind Direction at Lower Tip Height",
+        "security_categories": []
+    },
+    {
+        "id": 7300552677931898,
+        "external_id": "V52-WindTurbine.MxB1",
+        "name": "MxB1",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade B R1.4m ",
+            "asset_external_id": "blade_b_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade B R1.4m ",
+        "security_categories": []
+    },
+    {
+        "id": 7387969562932153,
+        "external_id": "V52-WindTurbine.MxC2",
+        "name": "MxC2",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade C R1.5m (spare)",
+            "asset_external_id": "blade_c_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade C R1.5m (spare)",
+        "security_categories": []
+    },
+    {
+        "id": 7476710743519135,
+        "external_id": "V52-WindTurbine.cnt0",
+        "name": "cnt0",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "low_speed_shaft_rotational_speed",
+            "concept_id": "http://purl.org/aspect/low_speed_shaft_rotational_speed",
+            "long_name": "Low Speed Shaft Rotational Speed",
+            "units": "RPM",
+            "comments": "Revolution per minutes of the low speed shaft, used for rotor position",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "RPM",
+        "is_step": false,
+        "description": "Revolution per minutes of the low speed shaft, used for rotor position",
+        "security_categories": []
+    },
+    {
+        "id": 7502214518308988,
+        "external_id": "V52-MetMast.Stilt_70m",
+        "name": "Stilt_70m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flow_inclination_angle",
+            "concept_id": "http://purl.org/aspect/flow_inclination_angle",
+            "long_name": "Flow Inclination Angle",
+            "units": "deg",
+            "comments": "Met Mast Sonic Anemometer Tilt angle at Upper Tip Height",
+            "asset_external_id": "metmast_70_wdir"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Tilt angle at Upper Tip Height",
+        "security_categories": []
+    },
+    {
+        "id": 7656308782491515,
+        "external_id": "V52-MetMast.Wsp_44m",
+        "name": "Wsp_44m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Metmast Cup anemometer at Hub Height, 44m",
+            "asset_external_id": "metmast_44"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Metmast Cup anemometer at Hub Height, 44m",
+        "security_categories": []
+    },
+    {
+        "id": 7694423548185066,
+        "external_id": "V52-WindTurbine.ActRef",
+        "name": "ActRef",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "active_power",
+            "concept_id": "http://purl.org/aspect/active_power",
+            "long_name": "Active Power",
+            "units": "kW",
+            "comments": "WTG Controller ActP MGr ref",
+            "asset_external_id": "WindTurbine"
+        },
+        "unit": "kW",
+        "is_step": false,
+        "description": "WTG Controller ActP MGr ref",
+        "security_categories": []
+    },
+    {
+        "id": 7804575793418907,
+        "external_id": "V52-WindTurbine.MxTM_DAU",
+        "name": "MxTM_DAU",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "mV/mV",
+            "comments": "Tower Mid Bending Moment Recorded in DAU (troubleshooting)",
+            "asset_external_id": "tower_mid"
+        },
+        "unit": "mV/mV",
+        "is_step": false,
+        "description": "Tower Mid Bending Moment Recorded in DAU (troubleshooting)",
+        "security_categories": []
+    },
+    {
+        "id": 7894839228267767,
+        "external_id": "V52-WindTurbine.MyB3cr",
+        "name": "MyB3cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade B R6.6m - crosstalk corrected",
+            "asset_external_id": "blade_b_6.6"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade B R6.6m - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 7971241560970979,
+        "external_id": "V52-MetMast.Svec_44m",
+        "name": "Svec_44m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Met Mast Sonic Anemometer Vectorial Wind Speed at Hub Height",
+            "asset_external_id": "metmast_44_ws"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Vectorial Wind Speed at Hub Height",
+        "security_categories": []
+    },
+    {
+        "id": 7982694417102676,
+        "external_id": "V52-WindTurbine.MTTdw",
+        "name": "MTTdw",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "tower_bending_moment",
+            "concept_id": "http://purl.org/aspect/tower_bending_moment",
+            "long_name": "Tower Bending Moment",
+            "units": "kNm",
+            "comments": "Tower Top Bending (down wind)",
+            "asset_external_id": "tower_top"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Tower Top Bending (down wind)",
+        "security_categories": []
+    },
+    {
+        "id": 7983266311391901,
+        "external_id": "V52-MetMast.Wsp_57m",
+        "name": "Wsp_57m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Metmast Cup anemometer at Upper Mid Height, 57m",
+            "asset_external_id": "metmast_57"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Metmast Cup anemometer at Upper Mid Height, 57m",
+        "security_categories": []
+    },
+    {
+        "id": 8007881812356931,
+        "external_id": "V52-WindTurbine.MyA1",
+        "name": "MyA1",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade A R1.4m ",
+            "asset_external_id": "blade_a_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade A R1.4m ",
+        "security_categories": []
+    },
+    {
+        "id": 8110729401460253,
+        "external_id": "V52-MetMast.AirAbs_18m",
+        "name": "AirAbs_18m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "air_temperature",
+            "concept_id": "http://purl.org/aspect/air_temperature",
+            "long_name": "Air Temperature",
+            "units": "DegC",
+            "comments": "Metmast Temperature sensor at Lower Tip Height, 18m",
+            "asset_external_id": "metmast_18"
+        },
+        "unit": "DegC",
+        "is_step": false,
+        "description": "Metmast Temperature sensor at Lower Tip Height, 18m",
+        "security_categories": []
+    },
+    {
+        "id": 8118345034393718,
+        "external_id": "V52-MetMast.Svec_31m",
+        "name": "Svec_31m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Met Mast Sonic Anemometer Vectorial Wind Speed at Mid Height",
+            "asset_external_id": "metmast_31_ws"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Vectorial Wind Speed at Mid Height",
+        "security_categories": []
+    },
+    {
+        "id": 8122788561066732,
+        "external_id": "V52-MetMast.Svec_70m",
+        "name": "Svec_70m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Met Mast Sonic Anemometer Vectorial Wind Speed at Upper Tip Height",
+            "asset_external_id": "metmast_70_ws"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Vectorial Wind Speed at Upper Tip Height",
+        "security_categories": []
+    },
+    {
+        "id": 8331742572156662,
+        "external_id": "V52-WindTurbine.MyB4",
+        "name": "MyB4",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade B R6.7m (spare) ",
+            "asset_external_id": "blade_b_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade B R6.7m (spare) ",
+        "security_categories": []
+    },
+    {
+        "id": 8572673762286475,
+        "external_id": "V52-WindTurbine.MySlat",
+        "name": "MySlat",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "main_shaft_yaw_moment",
+            "concept_id": "http://purl.org/aspect/main_shaft_yaw_moment",
+            "long_name": "Main Shaft Yaw Moment",
+            "units": "kNm",
+            "comments": "Main shaft calculated yaw moment",
+            "asset_external_id": "main_shaft"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Main shaft calculated yaw moment",
+        "security_categories": []
+    },
+    {
+        "id": 8774766468522169,
+        "external_id": "V52-WindTurbine.MyC2cr",
+        "name": "MyC2cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "edgewise_bending_moment",
+            "concept_id": "http://purl.org/aspect/edgewise_bending_moment",
+            "long_name": "Edgewise Bending Moment",
+            "units": "kNm",
+            "comments": "Edgewise Bend. Mom. Blade C R1.5m (spare) - crosstalk corrected",
+            "asset_external_id": "blade_c_1.5"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Edgewise Bend. Mom. Blade C R1.5m (spare) - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 8804410761645969,
+        "external_id": "V52-WindTurbine.MxA3_O",
+        "name": "MxA3_O",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "mV/V",
+            "comments": "Flapwise Bend. Mom. Blade A R6.6m Offset",
+            "asset_external_id": "blade_a_6.6"
+        },
+        "unit": "mV/V",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade A R6.6m Offset",
+        "security_categories": []
+    },
+    {
+        "id": 8812875140927461,
+        "external_id": "V52-MetMast.Stilt_44m",
+        "name": "Stilt_44m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flow_inclination_angle",
+            "concept_id": "http://purl.org/aspect/flow_inclination_angle",
+            "long_name": "Flow Inclination Angle",
+            "units": "deg",
+            "comments": "Met Mast Sonic Anemometer Tilt angle at Hub Height",
+            "asset_external_id": "metmast_44_ws"
+        },
+        "unit": "deg",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Tilt angle at Hub Height",
+        "security_categories": []
+    },
+    {
+        "id": 8886935722221395,
+        "external_id": "V52-WindTurbine.MxB1cr",
+        "name": "MxB1cr",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "flapwise_bending_moment",
+            "concept_id": "http://purl.org/aspect/flapwise_bending_moment",
+            "long_name": "Flapwise Bending Moment",
+            "units": "kNm",
+            "comments": "Flapwise Bend. Mom. Blade B R1.4m - crosstalk corrected",
+            "asset_external_id": "blade_b_1.4"
+        },
+        "unit": "kNm",
+        "is_step": false,
+        "description": "Flapwise Bend. Mom. Blade B R1.4m - crosstalk corrected",
+        "security_categories": []
+    },
+    {
+        "id": 9002979882881181,
+        "external_id": "V52-MetMast.Svec_57m",
+        "name": "Svec_57m",
+        "is_string": false,
+        "metadata": {
+            "standard_name": "wind_speed",
+            "concept_id": "http://purl.org/aspect/wind_speed",
+            "long_name": "Wind Speed",
+            "units": "m/s",
+            "comments": "Met Mast Sonic Anemometer Vectorial Wind Speed at Upper Mid Height",
+            "asset_external_id": "metmast_57_ws"
+        },
+        "unit": "m/s",
+        "is_step": false,
+        "description": "Met Mast Sonic Anemometer Vectorial Wind Speed at Upper Mid Height",
+        "security_categories": []
+    }
+]

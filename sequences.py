@@ -13,19 +13,21 @@ seq = Sequence(external_id=SEQ_EXTERNAL_ID, name=SEQ_EXTERNAL_ID, columns=column
 
 # client_tsp.sequences.create(seq)
 
-# seqs = client.sequences.list(name=SEQ_EXTERNAL_ID)
+seqs = client_tsp.sequences.list(name=SEQ_EXTERNAL_ID)
 
-# for seq in seqs:
-#    print(seq)
-#    client.sequences.delete(id=seq.id)
+for seq in seqs:
+    print(seq)
+    client_tsp.sequences.delete(id=seq.id)
 
 # data = [(1, ['pi',3.14]), (2, ['e',2.72]) ]
 # >>> c.sequences.data.insert(column_external_ids=["col_a","col_b"], rows=data, id=1)
 
 text = ""
+client_tsp.sequences.create(seq)
+seq = client_tsp.sequences.retrieve(external_id=SEQ_EXTERNAL_ID)
 
-#seq = client_tsp.sequences.retrieve(external_id=SEQ_EXTERNAL_ID)
+#rows = client_tsp.sequences.data.retrieve(external_id=SEQ_EXTERNAL_ID, start=240000, end=2500000, column_external_ids=["0"])
 
-rows = client_tsp.sequences.data.retrieve(external_id=SEQ_EXTERNAL_ID, start=240000, end=2500000, column_external_ids=["0"])
 
-print(rows)
+
+print()

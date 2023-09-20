@@ -1,5 +1,5 @@
 from cogniteapi import client
-from cognite.client.data_classes.raw import DatabaseList, Database, TableList, Table, RowList, Row
+from cognite.client.data_classes.raw import DatabaseList, TableList, RowList
 
 DB_NAME = "wt_time_series"
 
