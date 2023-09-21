@@ -1,40 +1,65 @@
 import util
+import time
 import config
 
 from cogniteapitsp import client_tsp
 
 SEQ_EXTERNAL_ID = "V52-WindTurbine.MyTT"
 
-seq = client_tsp.sequences.retrieve(external_id=SEQ_EXTERNAL_ID)
 
-for index in range(1, config.TURBINE_COUNT + 1):
-    ts_ext_id = util.get_ext_id(SEQ_EXTERNAL_ID, index)
-    print(ts_ext_id)
+def delete_time_series_data(ts_ext_id):
+    print("Deleting data for", ts_ext_id)
+    client_tsp.time_series.data.delete_range(external_id=ts_ext_id, start=config.JAN_2023_MS, end=config.JAN_2024_MS)
 
-completed = False
 
-time_ms = config.START_INSERT_DATE_JAN_2023
-one_day_minutes = 24*60
-one_day_ms = 24*60*60*1000
-start = 0
-end = 800
+def populate_time_series(ts_ext_id, start):
+    completed = False
+    time_ms = config.JAN_2023_MS
+    current_time_ms = int(time.time() * 1000)
 
-datapoints = []
+    while not completed:
+        datapoints = []
 
-while not completed:
-    rows = client_tsp.sequences.data.retrieve(external_id=SEQ_EXTERNAL_ID, start=start, end=-1, limit=1440)
-    
-    index = 0
+        print(ts_ext_id, "week", start)
 
-    for row_no, values in rows.items():
-        print("\nRow #", row_no)
-        index += 1
-        for value in values:
-            time_ms += 200
-            datapoints.append((time_ms, value))
+        # Retrieve source datapoints from Sequence
+        rows = client_tsp.sequences.data.retrieve(external_id=SEQ_EXTERNAL_ID, start=start*1440*7, end=-1, limit=1440*7)
 
-    
-    completed = True
-    #print(datapoints)
-    print(len(datapoints))
-    #client_tsp.time_series.data.insert(datapoints=datapoints)
+        # Create list of datapoints. Ignore "None" values equal to 999 999 999.
+        for row_no, values in rows.items():
+            for value in values:
+                time_ms += 200
+                if time_ms < current_time_ms:
+                    if value != config.TS_NO_VALUE:
+                        datapoints.append((time_ms, value))
+                        # print(time_ms, value)
+                else:
+                    completed = True
+                    break
+
+        # Insert datapoints for one week
+        if len(datapoints) > 0:
+            client_tsp.time_series.data.insert(external_id=ts_ext_id, datapoints=datapoints)
+
+        # Increment week number, wrap to 0 when more than 26
+        start = (start + 1) % 27  
+
+
+def populate_time_series_variants(source_ts_ext_id):
+    for index in range(1, config.TURBINE_COUNT + 1):
+        # Create the time series external id for this turbine
+        ts_ext_id = util.get_ext_id(SEQ_EXTERNAL_ID, index)
+
+        # Delete existing time series data
+        delete_time_series_data(ts_ext_id)
+
+        # Create a random number for which week to start pulling data for this turbine
+        # random.seed(hash(ts_ext_id))
+        # start_week = random.randint(0, 26)
+        start_week = config.TURBINE_WEEK_OFFSET[index - 1]
+
+        # Populate time series data
+        populate_time_series(ts_ext_id, start_week)
+
+
+populate_time_series_variants(SEQ_EXTERNAL_ID)
