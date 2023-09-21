@@ -1,3 +1,5 @@
+import config
+
 from datetime import datetime
 from cogniteapi import client
 from cogniteapitsp import client_tsp
@@ -18,7 +20,7 @@ def get_empty_dps_dict(start_date_ms):
     dps_dict = {}
 
     for minute in range(0, 10800):
-        column_dict = {column_name: 999999999 for column_name in COLUMNS_NAMES}
+        column_dict = {column_name: config.TS_NO_VALUE for column_name in COLUMNS_NAMES}
         dps_dict[start_minute + minute] = column_dict
 
     return dps_dict
@@ -53,7 +55,7 @@ def copy_one_timeseries_data(external_id):
                 # if ts_minute not in dps_dict.keys():
                 #    dps_dict[ts_minute] = dict.fromkeys(COLUMNS_NAMES)
 
-                if dps_dict[ts_minute][ts_fifth_of_second] is None:
+                if dps_dict[ts_minute][ts_fifth_of_second] is config.TS_NO_VALUE:
                     dps_dict[ts_minute][ts_fifth_of_second] = datapoint.value
 
             # print("Time", start_date_ms, "Source", len(datapointsArray), "Total Source", total_source, "Key", key, "Row List", len(row_list))
