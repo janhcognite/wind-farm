@@ -1,8 +1,10 @@
+import json
 import config
 
 from datetime import datetime
 from cogniteapi import client
 from cogniteapitsp import client_tsp
+from cognite.client.data_classes.sequences import Sequence
 
 # Source data time series contains data for first year of 2018 - 181 days - 260640 minutes
 START_DATE_MS = int(datetime.strptime("2018-02-01", '%Y-%m-%d').timestamp()) * 1000
@@ -12,6 +14,11 @@ END_DATE_MS = int(datetime.strptime("2018-08-01", '%Y-%m-%d').timestamp()) * 100
 ONE_WEEK_MS = 86400 * 7 * 1000
 
 COLUMNS_NAMES = [str(i) for i in range(300)]
+
+columns = []
+
+for index in range(0, 300):
+    columns.append({"valueType": "DOUBLE", "externalId": str(index)})
 
 
 def get_empty_dps_dict(start_date_ms):
@@ -26,7 +33,7 @@ def get_empty_dps_dict(start_date_ms):
     return dps_dict
 
 
-def copy_one_timeseries_data(external_id):
+def download_single_timeseries_data(external_id):
     print("\nRetrieving time series data for", external_id)
 
     start_date_ms = START_DATE_MS
@@ -39,28 +46,18 @@ def copy_one_timeseries_data(external_id):
         dps_dict = get_empty_dps_dict(start_date_ms)
 
         if len(datapointsArray) > 0:
-            
+
             for datapoint in datapointsArray:
                 ts = datapoint.timestamp - START_DATE_MS
                 ts_minute = int(ts / 60000)  # Row
-
-                # if ts_minute == 1000:
-                #    break
 
                 if ts_minute == 0:
                     ts_fifth_of_second = str(int(ts/60000*300))
                 else:
                     ts_fifth_of_second = str(int(((ts/60000) % ts_minute) * 300))  # Column
 
-                # if ts_minute not in dps_dict.keys():
-                #    dps_dict[ts_minute] = dict.fromkeys(COLUMNS_NAMES)
-
                 if dps_dict[ts_minute][ts_fifth_of_second] is config.TS_NO_VALUE:
                     dps_dict[ts_minute][ts_fifth_of_second] = datapoint.value
-
-            # print("Time", start_date_ms, "Source", len(datapointsArray), "Total Source", total_source, "Key", key, "Row List", len(row_list))
-
-        # print(json.dumps(dps_dict, indent=4))
 
         # Insert datapoints into sequence
         data = []
@@ -70,12 +67,8 @@ def copy_one_timeseries_data(external_id):
             for fifth_of_second in dps_dict[minute].keys():
                 column_values.append(dps_dict[minute][fifth_of_second])
 
-            # if column_values.count(None) == 299:
-            #    column_values = [-999999] * 300
-            
             data.append((minute, column_values))
 
-            # print(int((start_date_ms-START_DATE_MS)/60000), "Inserting data into sequence", external_id)
             if minute % 1440 == 0 and minute > 0:
                 print("Writing to sequence. Minute", minute)
                 client_tsp.sequences.data.insert(external_id=external_id, column_external_ids=COLUMNS_NAMES, rows=data,)
@@ -89,4 +82,30 @@ def copy_one_timeseries_data(external_id):
             complete = True
 
 
-copy_one_timeseries_data("V52-WindTurbine.MyTT")
+def download_all_time_series_data(max_count):
+    ts_source_list = []
+    count = 0
+
+    # Load list of source time series from file
+    with open("json/wt-time-series.json") as file:
+        ts_source_list = list(json.load(file))
+
+    for ts_source in ts_source_list:
+        ts_ext_id = ts_source["external_id"]
+
+        # Create sequence if it does not already exist
+        seq = client_tsp.sequences.retrieve(external_id=ts_ext_id)
+
+        if seq is None:
+            print("Creating sequence", ts_ext_id)
+            seq = Sequence(external_id=ts_ext_id, name=ts_ext_id, columns=columns)
+            client_tsp.sequences.create(seq)
+            download_single_timeseries_data(ts_ext_id)
+            count += 1
+        
+        if count == max_count:
+            break
+
+
+download_all_time_series_data(max_count=4)
+# client_tsp.sequences.delete(external_id="V52-MetMast.Sdir_31m")
