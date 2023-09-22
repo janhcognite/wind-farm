@@ -19,9 +19,6 @@ for seq in seqs:
     print(seq)
     client_tsp.sequences.delete(id=seq.id)
 
-# data = [(1, ['pi',3.14]), (2, ['e',2.72]) ]
-# >>> c.sequences.data.insert(column_external_ids=["col_a","col_b"], rows=data, id=1)
-
 text = ""
 client_tsp.sequences.create(seq)
 seq = client_tsp.sequences.retrieve(external_id=SEQ_EXTERNAL_ID)
