@@ -12,3 +12,6 @@ JAN_2023_MS = int(datetime.strptime("2023-01-01", '%Y-%m-%d').timestamp()) * 100
 JAN_2024_MS = int(datetime.strptime("2024-01-01", '%Y-%m-%d').timestamp()) * 1000
 
 TURBINE_WEEK_OFFSET = [0, 20, 16, 25, 5, 11, 2, 18, 7]
+
+MODEL_3D_ID = 6040067171391461
+REVISION_3D_ID = 3032357488116025
