@@ -120,10 +120,15 @@ def delete_all_sequences():
 
     for ts_source in ts_source_list:
         ts_ext_id = ts_source["external_id"]
-        print("Deleting time series", ts_ext_id)
-        client_tsp.sequences.delete(external_id=ts_ext_id)
+        seq = client_tsp.sequences.retrieve(external_id=ts_ext_id)
+
+        if seq is not None:
+            print("Deleting time series", ts_ext_id)
+            client_tsp.sequences.delete(external_id=ts_ext_id)
 
 
-for i in range(0, 26):
-    download_all_time_series_data()
+delete_all_sequences()
 
+#for i in range(0, 26):
+#    download_all_time_series_data()
+#
