@@ -1,7 +1,7 @@
 import json
 import config
 
-from cogniteapitsp import client_tsp
+from cogniteapi_tsp import client_tsp
 from cognite.client.data_classes.time_series import TimeSeries
 
 

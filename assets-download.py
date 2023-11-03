@@ -1,6 +1,6 @@
 import config
 
-from cogniteapi import client
+from cogniteapi_rts import client
 
 assets = client.assets.list(data_set_ids=[config.WT_DATA_SET_ID], limit=-1)
 

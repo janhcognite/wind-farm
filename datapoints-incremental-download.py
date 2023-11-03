@@ -2,8 +2,8 @@ import json
 import config
 
 from datetime import datetime
-from cogniteapi import client
-from cogniteapitsp import client_tsp
+from cogniteapi_rts import client
+from cogniteapi_tsp import client_tsp
 from cognite.client.data_classes.sequences import Sequence, SequenceData
 
 # Source data time series contains data for first year of 2018 - 181 days - 260640 minutes

@@ -1,7 +1,7 @@
 import json
 import config
 
-from cogniteapitsp import client_tsp
+from cogniteapi_rts import client_rts
 from cognite.client.data_classes.assets import Asset
 
 
@@ -10,7 +10,7 @@ def load_source_assets():
     with open("json/wt-assets.json") as file:
         assets_JSON = list(json.load(file))
 
-    print("Opened ", len(assets_JSON), "assets")
+    print("Opened", len(assets_JSON), "assets")
 
     assets = []
 
@@ -35,7 +35,7 @@ def load_source_assets():
 
 def create_new_multi_turbine_asset_data(source_assets, turbine_count):
     # Create top level asset
-    assets = [Asset(external_id=config.TOP_ASSET_EXT_ID, name="Wind Farm 01", data_set_id=config.DATA_SET_ID)]
+    assets = [Asset(external_id=config.TOP_ASSET_EXT_ID, name="Wind Farm 01", data_set_id=config.WIND_FARM_DATA_SET_ID_RST)]
 
     for count in range(1, turbine_count + 1):
         turbine_no = str(count).zfill(2)
@@ -47,7 +47,7 @@ def create_new_multi_turbine_asset_data(source_assets, turbine_count):
             source_asset: Asset
             new_asset = Asset(external_id=id_prefix + source_asset.external_id)
             new_asset.name = name_prefix + source_asset.name
-            new_asset.data_set_id = config.DATA_SET_ID
+            new_asset.data_set_id = config.WIND_FARM_DATA_SET_ID_RST
 
             # Parent external id
             if source_asset.parent_external_id is None:
@@ -72,18 +72,18 @@ def create_new_multi_turbine_asset_data(source_assets, turbine_count):
 
 def create_new_assets(new_assets):
     # Delete assets if they exist
-    top_asset = client_tsp.assets.retrieve(external_id=config.TOP_ASSET_EXT_ID)
+    top_asset = client_rts.assets.retrieve(external_id=config.TOP_ASSET_EXT_ID)
 
     if top_asset is not None:
         print("Deleting existing assets")
-        client_tsp.assets.delete(external_id=config.TOP_ASSET_EXT_ID, recursive=True)
+        client_rts.assets.delete(external_id=config.TOP_ASSET_EXT_ID, recursive=True)
 
     # Create new assets
     print("Creating", len(new_assets), "assets")
-    client_tsp.assets.create_hierarchy(assets=new_assets)
+    client_rts.assets.create_hierarchy(assets=new_assets)
 
 
 source_assets = load_source_assets()
-new_assets = create_new_multi_turbine_asset_data(source_assets=source_assets, turbine_count=10)
+new_assets = create_new_multi_turbine_asset_data(source_assets=source_assets, turbine_count=config.TURBINE_COUNT)
 
 create_new_assets(new_assets)

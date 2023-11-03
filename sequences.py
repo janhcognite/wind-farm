@@ -1,4 +1,4 @@
-from cogniteapitsp import client_tsp
+from cogniteapi_tsp import client_tsp
 from cognite.client.data_classes.sequences import Sequence
 
 SEQ_EXTERNAL_ID = "V52-WindTurbine.MyTT"

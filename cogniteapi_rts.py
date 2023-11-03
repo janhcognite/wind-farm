@@ -16,6 +16,4 @@ BASE_URL = f"https://{CDF_CLUSTER}.cognitedata.com"
 
 creds = OAuthClientCredentials(token_url=TOKEN_URL, client_id= CLIENT_ID, scopes= SCOPES, client_secret= CLIENT_SECRET)
 cnf = ClientConfig(client_name="renewable-tech-staging", project=COGNITE_PROJECT, credentials=creds, base_url=BASE_URL)
-client = CogniteClient(cnf)
-
-
+client_rts = CogniteClient(cnf)

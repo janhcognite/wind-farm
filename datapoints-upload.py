@@ -2,7 +2,7 @@ import util
 import time
 import config
 
-from cogniteapitsp import client_tsp
+from cogniteapi_tsp import client_tsp
 
 SEQ_EXTERNAL_ID = "V52-WindTurbine.MyTT"
 
