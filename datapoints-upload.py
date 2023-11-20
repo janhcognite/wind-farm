@@ -2,17 +2,15 @@ import util
 import time
 import config
 
-from cogniteapi_tsp import client_tsp
-
-SEQ_EXTERNAL_ID = "V52-WindTurbine.MyTT"
+from cogniteapi_rts import client_rts
 
 
 def delete_time_series_data(ts_ext_id):
     print("Deleting data for", ts_ext_id)
-    client_tsp.time_series.data.delete_range(external_id=ts_ext_id, start=config.JAN_2023_MS, end=config.JAN_2024_MS)
+    client_rts.time_series.data.delete_range(external_id=ts_ext_id, start=config.JAN_2023_MS, end=config.JAN_2024_MS)
 
 
-def populate_time_series(ts_ext_id, start):
+def populate_time_series(ts_ext_id, seq_external_id, start, index):
     completed = False
     time_ms = config.JAN_2023_MS
     current_time_ms = int(time.time() * 1000)
@@ -23,7 +21,7 @@ def populate_time_series(ts_ext_id, start):
         print(ts_ext_id, "week", start)
 
         # Retrieve source datapoints from Sequence
-        rows = client_tsp.sequences.data.retrieve(external_id=SEQ_EXTERNAL_ID, start=start*1440*7, end=-1, limit=1440*7)
+        rows = client_rts.sequences.data.retrieve(external_id=seq_external_id, start=start*1440*7, end=-1, limit=1440*7)
 
         # Create list of datapoints. Ignore "None" values equal to 999 999 999.
         for row_no, values in rows.items():
@@ -31,24 +29,24 @@ def populate_time_series(ts_ext_id, start):
                 time_ms += 200
                 if time_ms < current_time_ms:
                     if value != config.TS_NO_VALUE:
-                        datapoints.append((time_ms, value))
-                        # print(time_ms, value)
+                        if time_ms % 3600000 == 0:
+                            datapoints.append((time_ms, value))
                 else:
                     completed = True
                     break
 
         # Insert datapoints for one week
         if len(datapoints) > 0:
-            client_tsp.time_series.data.insert(external_id=ts_ext_id, datapoints=datapoints)
+            client_rts.time_series.data.insert(external_id=ts_ext_id, datapoints=datapoints)
 
         # Increment week number, wrap to 0 when more than 26
         start = (start + 1) % 27  
 
 
-def populate_time_series_variants(source_ts_ext_id):
+def populate_time_series_variants(seq_external_id):
     for index in range(1, config.TURBINE_COUNT + 1):
         # Create the time series external id for this turbine
-        ts_ext_id = util.get_ext_id(SEQ_EXTERNAL_ID, index)
+        ts_ext_id = util.get_ext_id(seq_external_id, index)
 
         # Delete existing time series data
         delete_time_series_data(ts_ext_id)
@@ -59,7 +57,12 @@ def populate_time_series_variants(source_ts_ext_id):
         start_week = config.TURBINE_WEEK_OFFSET[index - 1]
 
         # Populate time series data
-        populate_time_series(ts_ext_id, start_week)
+        populate_time_series(ts_ext_id, seq_external_id, start_week, index)
 
 
-populate_time_series_variants(SEQ_EXTERNAL_ID)
+def create_datapoints():
+    for seq_external_id in config.prioritized_ts_list:
+        populate_time_series_variants(seq_external_id)
+
+
+create_datapoints()

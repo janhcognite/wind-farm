@@ -2,8 +2,8 @@ import json
 import config
 
 from datetime import datetime
-from cogniteapi_rts import client
-from cogniteapi_tsp import client_tsp
+from cogniteapi_rts import client_rts
+# from cogniteapi_tsp import client_tsp
 from cognite.client.data_classes.sequences import Sequence
 
 # Source data time series contains data for first year of 2018 - 181 days - 260640 minutes
@@ -41,7 +41,7 @@ def download_single_timeseries_data(external_id):
 
     while not complete:
         print(start_date_ms, "Fetching data")
-        datapointsArray = client.time_series.data.retrieve_arrays(external_id=external_id, start=start_date_ms, end=start_date_ms + ONE_WEEK_MS)
+        datapointsArray = client_rts.time_series.data.retrieve_arrays(external_id=external_id, start=start_date_ms, end=start_date_ms + ONE_WEEK_MS)
 
         dps_dict = get_empty_dps_dict(start_date_ms)
 
@@ -71,7 +71,7 @@ def download_single_timeseries_data(external_id):
 
             if minute % 1440 == 0 and minute > 0:
                 print("Writing to sequence. Minute", minute)
-                client_tsp.sequences.data.insert(external_id=external_id, column_external_ids=COLUMNS_NAMES, rows=data,)
+                client_rts.sequences.data.insert(external_id=external_id, column_external_ids=COLUMNS_NAMES, rows=data,)
                 data = []
 
         # Increment start date with one week
@@ -83,23 +83,17 @@ def download_single_timeseries_data(external_id):
 
 
 def download_all_time_series_data(max_count):
-    ts_source_list = []
     count = 0
 
-    # Load list of source time series from file
-    with open("json/wt-time-series.json") as file:
-        ts_source_list = list(json.load(file))
-
-    for ts_source in ts_source_list:
-        ts_ext_id = ts_source["external_id"]
+    for ts_ext_id in config.prioritized_ts_list:
 
         # Create sequence if it does not already exist
-        seq = client_tsp.sequences.retrieve(external_id=ts_ext_id)
+        seq = client_rts.sequences.retrieve(external_id=ts_ext_id)
 
         if seq is None:
             print("Creating sequence", ts_ext_id)
-            seq = Sequence(external_id=ts_ext_id, name=ts_ext_id, columns=columns)
-            client_tsp.sequences.create(seq)
+            seq = Sequence(external_id=ts_ext_id, name=ts_ext_id, data_set_id=config.WIND_FARM_DATA_SET_ID_RST, columns=columns)
+            client_rts.sequences.create(seq)
             download_single_timeseries_data(ts_ext_id)
             count += 1
         
@@ -107,5 +101,6 @@ def download_all_time_series_data(max_count):
             break
 
 
-download_all_time_series_data(max_count=4)
-# client_tsp.sequences.delete(external_id="V52-MetMast.Sdir_31m")
+download_all_time_series_data(max_count=9999)
+#client_rts.sequences.delete(external_id="V52-MetMast.Wdir_41m")
+

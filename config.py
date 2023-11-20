@@ -22,3 +22,6 @@ REVISION_3D_TSP = 1280141678130809
 # 3D model renewable-tech-staging
 MODEL_3D_ID_RTS = 8152685291880594
 REVISION_3D_ID_RTS = 5576718723151515
+
+# Prioritized time series
+prioritized_ts_list = ["V52-WindTurbine.Qt", "V52-WindTurbine.WS", "V52-WindTurbine.Pt", "V52-WindTurbine.St", "V52-MetMast.Wdir_41m", "V52-WindTurbine.YawErr"]

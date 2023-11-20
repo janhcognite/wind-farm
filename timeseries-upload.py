@@ -1,7 +1,7 @@
 import json
 import config
 
-from cogniteapi_tsp import client_tsp
+from cogniteapi_rts import client_rts
 from cognite.client.data_classes.time_series import TimeSeries
 
 
@@ -15,22 +15,23 @@ def load_source_time_series():
     ts_list = []
 
     for ts_source in ts_source_list:
-        ts = TimeSeries()
-        ts.name = ts_source["name"]
-        if "description" in dict(ts_source).keys():
-            ts.description = ts_source["description"]
+        if ts_source["external_id"] in config.prioritized_ts_list:
+            ts = TimeSeries()
+            ts.name = ts_source["name"]
+            if "description" in dict(ts_source).keys():
+                ts.description = ts_source["description"]
 
-        ts.external_id = ts_source["external_id"]
+            ts.external_id = ts_source["external_id"]
 
-        ts.metadata = ts_source["metadata"]
+            ts.metadata = ts_source["metadata"]
 
-        ts_list.append(ts)
+            ts_list.append(ts)
 
     return ts_list
 
 
 def create_new_multi_turbine_time_series_data(ts_source_list, turbine_count):
-    assets = client_tsp.assets.list(data_set_ids=[config.DATA_SET_ID], limit=-1)
+    assets = client_rts.assets.list(data_set_ids=[config.WIND_FARM_DATA_SET_ID_RST], limit=-1)
 
     ts_list = []
 
@@ -42,9 +43,10 @@ def create_new_multi_turbine_time_series_data(ts_source_list, turbine_count):
         # Create new time series from source data for this turbine
         for ts_source in ts_source_list:
             ts_source: TimeSeries
-            ts_new: TimeSeries = TimeSeries(external_id=id_prefix + ts_source.external_id.replace("-WindTurbine", "").replace("V52", ""))
+            ts_new: TimeSeries = TimeSeries()
+            ts_new.external_id = id_prefix + ts_source.external_id.replace("-WindTurbine", "").replace("V52", "")
             ts_new.name = name_prefix + ts_source.name
-            ts_new.data_set_id = config.DATA_SET_ID
+            ts_new.data_set_id = config.WIND_FARM_DATA_SET_ID_RST
 
             # Description
             if ts_source.description is not None:
@@ -65,7 +67,7 @@ def create_new_multi_turbine_time_series_data(ts_source_list, turbine_count):
 
 def create_new_time_series(ts_list):
     # Delete time_series if they exist
-    old_ts_list = client_tsp.time_series.list(data_set_ids=[config.DATA_SET_ID], limit=-1)
+    old_ts_list = client_rts.time_series.list(data_set_ids=[config.WIND_FARM_DATA_SET_ID_RST], limit=-1)
     old_ts_ids = [ts.id for ts in old_ts_list]
 
     if len(old_ts_ids) > 0:
@@ -73,9 +75,15 @@ def create_new_time_series(ts_list):
 
     # Create new time series
     print("Creating", len(ts_list), "time series")
-    client_tsp.time_series.create(ts_list)
+    client_rts.time_series.create(ts_list)
 
 
 ts_source_list = load_source_time_series()
+
 ts_list = create_new_multi_turbine_time_series_data(ts_source_list, config.TURBINE_COUNT)
+
+for ts in ts_list:
+    print(ts)
+
+print(len(ts_list))
 create_new_time_series(ts_list)
