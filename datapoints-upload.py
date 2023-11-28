@@ -29,7 +29,7 @@ def populate_time_series(ts_ext_id, seq_external_id, start, index):
                 time_ms += 200
                 if time_ms < current_time_ms:
                     if value != config.TS_NO_VALUE:
-                        if time_ms % 3600000 == 0:
+                        if time_ms % 3600000 == 0 or True:
                             datapoints.append((time_ms, value))
                 else:
                     completed = True

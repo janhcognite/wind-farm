@@ -8,7 +8,7 @@ TS_NO_VALUE = 999999999
 WIND_FARM_DATA_SET_ID_RST = 8572668283316634
 
 TOP_ASSET_EXT_ID = "wind_farm_01"
-TURBINE_COUNT = 9
+TURBINE_COUNT = 2
 
 JAN_2023_MS = int(datetime.strptime("2023-01-01", '%Y-%m-%d').timestamp()) * 1000
 JAN_2024_MS = int(datetime.strptime("2024-01-01", '%Y-%m-%d').timestamp()) * 1000
@@ -21,7 +21,7 @@ REVISION_3D_TSP = 1280141678130809
 
 # 3D model renewable-tech-staging
 MODEL_3D_ID_RTS = 8152685291880594
-REVISION_3D_ID_RTS = 5576718723151515
+REVISION_3D_ID_RTS = 5394099555552887
 
 # Prioritized time series
 prioritized_ts_list = ["V52-WindTurbine.Qt", "V52-WindTurbine.WS", "V52-WindTurbine.Pt", "V52-WindTurbine.St", "V52-MetMast.Wdir_41m", "V52-WindTurbine.YawErr"]
